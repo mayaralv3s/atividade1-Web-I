@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <form>
+            <div>
+                <label>Nome e sobrenome</label>
+                <br>
+                <input type="text" name="nome" id="nome" size="50">
+            </div>
+
+            <div>
+                <label>Email</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="seuemail@dominio.com" size="50">
+            </div>
+
+            <div>
+                <label>Telefone</label>
+                <br>
+                <input type="tel" name="tel" id="telefone" placeholder="(xx)xxxxx-xxxx" size="50">
+            </div>
+
+            <div>
+                <label>Mensagem</label>
+                <br>
+                <input type="text" size="50" style="height: 100px;">
+            </div>
+                
+            <br>
+
+            <div>
+                <fieldset> <legend> Como prefere o nosso contato?</legend>
+                    <label>
+                        <input type="radio" name="contato" value="email"> Email
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="contato" value="whatsapp"> Whatsapp
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="contato" value="telefone"> Telefone
+                    </label>
+                </fieldset>
+            </div>
+
+            <br>
+            <div>
+                <fieldset> <legend>Qual horário prefere ser atendido?</legend>
+                    <select id="horario">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+            </div>
+
+            <br>
+            <div> 
+                <input type="checkbox" id="novidades" name="novidades" value="aceito">
+                <label>Gostaria de receber nossas novidades por email?</label>
+            </div>
+
+            <br>
+            <div>
+                <button type="submit">Enviar Formulário</button>
+            </div>
+    </form>
+</body>
+</html>
